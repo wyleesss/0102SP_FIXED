@@ -83,13 +83,6 @@
             processListView.TabIndex = 5;
             processListView.UseCompatibleStateImageBehavior = false;
             processListView.View = View.Details;
-            processListView.Columns.Add("Process Name", 230, HorizontalAlignment.Center);
-            processListView.Columns.Add("ID", 100, HorizontalAlignment.Center);
-            processListView.Columns.Add("CPU Usage (%)", 150, HorizontalAlignment.Center);
-            processListView.Columns.Add("Memory Usage (MB)", 200, HorizontalAlignment.Center);
-            processListView.Columns.Add("Start Time", 100, HorizontalAlignment.Center);
-            processListView.Columns.Add("Thread Count", 145, HorizontalAlignment.Center);
-            processListView.Font = new Font(processListView.Font, FontStyle.Bold);
             // 
             // label3
             // 
@@ -243,8 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
-            update();
         }
 
         #endregion

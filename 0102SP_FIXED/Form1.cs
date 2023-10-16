@@ -10,6 +10,16 @@ namespace _0102SP_FIXED
         public Form1()
         {
             InitializeComponent();
+
+            processListView.Columns.Add("Process Name", 230, HorizontalAlignment.Center);
+            processListView.Columns.Add("ID", 100, HorizontalAlignment.Center);
+            processListView.Columns.Add("CPU Usage (%)", 150, HorizontalAlignment.Center);
+            processListView.Columns.Add("Memory Usage (MB)", 200, HorizontalAlignment.Center);
+            processListView.Columns.Add("Start Time", 100, HorizontalAlignment.Center);
+            processListView.Columns.Add("Thread Count", 145, HorizontalAlignment.Center);
+            processListView.Font = new Font(processListView.Font, FontStyle.Bold);
+
+            update();
         }
 
         public void update()
